@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3d3d6a;
+    margin: 20px;
+    padding: 0;
+}
+
+/* CONTAINER: Styles for the box holding all three cards */
+.card-container {
+    display: flex; /* Key for lining up the cards */
+    justify-content: space-around; /* Distributes space evenly between and around cards */
+    gap: 20px; /* Space between the cards */
+    max-width: 1000px; /* Ensures the container doesn't get too wide */
+    margin: 0 auto; /* Centers the container on the page */
+}
+
+/* INDIVIDUAL CARD STYLE */
+.player-card {
+    background-color: white;
+    border: 2px solid #91bfde; /* A blue border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px;
+    width: 30%; /* Makes each card take up roughly a third of the container width */
+    text-align: center;
+}
+
+/* TEXT STYLES */
+.player-name {
+    color: #000000; /* Dark blue-gray for the name */
+    margin-top: 0;
+    border-bottom: 2px solid #ff1900; /* A red line under the name */
+    padding-bottom: 5px;
+}
+
+.player-stat {
+    color: #34495e;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.player-bio {
+    color: #7f8c8d;
+    font-style: italic;
+    margin-top: 15px;
+    font-size: 0.9em;
+}
