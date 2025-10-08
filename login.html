@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - Unsplash Clone</title>
+<style>
+body {
+background-color: #121212;
+color: #ffffff;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+.login-container {
+background-color: #1e1e1e;
+padding: 40px;
+border-radius: 8px;
+text-align: center;
+width: 350px;
+}
+.login-container h1 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+.login-container p {
+color: #a7a7a7;
+margin-bottom: 30px;
+}
+.login-form input {
+width: 100%;
+padding: 12px;
+margin-bottom: 15px;
+border: 1px solid #333;
+background-color: #2b2b2b;
+color: #ffffff;
+border-radius: 4px;
+box-sizing: border-box; /* To include padding and border in the element's total width and height */
+}
+.login-form input::placeholder {
+color: #a7a7a7;
+}
+.login-form button {
+width: 100%;
+padding: 12px;
+background-color: #ffffff;
+color: #000000;
+border: none;
+border-radius: 4px;
+font-weight: bold;
+cursor: pointer;
+margin-top: 15px;
+}
+.or-divider {
+display: flex;
+align-items: center;
+text-align: center;
+color: #a7a7a7;
+margin: 20px 0;
+}
+.or-divider::before,
+.or-divider::after {
+content: '';
+flex: 1;
+border-bottom: 1px solid #333;
+}
+.or-divider:not(:empty)::before {
+margin-right: .25em;
+}
+.or-divider:not(:empty)::after {
+margin-left: .25em;
+}
+.social-login button {
+width: 100%;
+padding: 12px;
+margin-bottom: 10px;
+border-radius: 4px;
+border: 1px solid #333;
+background-color: transparent;
+color: #ffffff;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.social-login img {
+width: 20px;
+margin-right: 10px;
+}
+.signup-link {
+color: #a7a7a7;
+font-size: 14px;
+margin-top: 20px;
+}
+.signup-link a {
+color: #ffffff;
+text-decoration: none;
+font-weight: bold;
+}
+</style>
+</head>
+<body>
+<div class="login-container">
+<h1>Unsplash Clone</h1>
+<p>Welcome back.</p>
+<form class="login-form" action="index.html">
+<input type="email" placeholder="Email">
+<input type="password" placeholder="Password">
+<button type="submit">Login</button>
+</form>
+<div class="or-divider">OR</div>
+<div class="social-login">
+<a href="index.html">
+     <button>
+      <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google icon">
+      Continue with Google
+     </button>
+    </a>
+ <a href="index.html">
+     <button>
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="Facebook icon">
+      Continue with Facebook
+     </button>
+    </a>
+</div>
+<div class="signup-link">
+Don't have an account? <a href="index.html">Join</a>
+</div>
+</div>
+</body>
+</html>
