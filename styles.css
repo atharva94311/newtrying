@@ -1,48 +1,57 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #3d3d6a;
-    margin: 20px;
-    padding: 0;
-}
+        /* Custom Styles to complement Tailwind CSS */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111111;
+            color: #f9fafb;
+        }
 
-.card-container {
-    display: flex; 
-    justify-content: space-around; 
-    gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto; 
-}
+        /* Responsive sidebar transitions */
+        #sidebar {
+            transition: transform 0.3s ease-in-out;
+        }
 
-/* INDIVIDUAL CARD STYLE */
-.player-card {
-    background-color: white;
-    border: 2px solid #91bfde; /* blue border */
-    border-radius: 10px; /* Round corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 30%; /* 1/3 of screen  */
-    text-align: center;
-}
+        /* Hide scrollbar for category navigation */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+        
+        /* Active state for navigation links */
+        .nav-link-active {
+            border-bottom: 2px solid #f9fafb;
+            font-weight: 600;
+        }
 
-/* TEXT STYLES */
-.player-name {
-    color: #000000; 
-    margin-top: 0;
-    border-bottom: 2px solid #ff1900; /* red line under name */
-    padding-bottom: 5px;
-}
+        /* Image placeholder styles to reserve space */
+        .img-placeholder {
+            background-color: #374151; /* gray-700 */
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
 
-.player-stat {
-    color: #34495e;
-    font-size: 1.1em;
-    font-weight: bold;
-    margin: 5px 0;
-}
+        /* Masonry-like grid styling */
+        .masonry-grid {
+            column-count: 1;
+            column-gap: 1.5rem; /* gap-6 */
+        }
+        @media (min-width: 640px) {
+            .masonry-grid {
+                column-count: 2;
+            }
+        }
+        @media (min-width: 1024px) {
+            .masonry-grid {
+                column-count: 3;
+            }
+        }
+        .masonry-grid-item {
+            break-inside: avoid;
+            margin-bottom: 1.5rem; /* mb-6 */
+            display: inline-block;
+            width: 100%;
+        }
 
-.player-bio {
-    color: #7f8c8d;
-    font-style: italic;
-    margin-top: 15px;
-    font-size: 0.9em;
-
-}
